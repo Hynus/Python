@@ -39,7 +39,7 @@ def get_title(amz_pdt_page, filename):
     return pdt_title
 # —————————————————————————————————————————————————————————————————————
 
-# 获取bullet point及数量————————————————————————————————————————————————
+# 获取bullet point及数量—————————————————————————————————————————————————
 def get_bullet_points(amz_pdt_page, filename):
     bullet_pt_pq = amz_pdt_page("#feature-bullets").find("li").not_("#replacementPartsFitmentBullet")
     bullet_pt_text = amz_pdt_page("#feature-bullets").find("li").not_("#replacementPartsFitmentBullet").text()
